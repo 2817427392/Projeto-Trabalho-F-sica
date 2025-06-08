@@ -1,5 +1,114 @@
+*{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding: 0;
+    margin: 0;
+    top: 0;
+}
+
+body{
+    background-color:antiquewhite;
+}
+
 @media(max-width:450px){
-    h1{
-        color: green;
+    header{
+        background-color: bisque;
+        text-align: center;
+        padding: 10px;
+        border-bottom: solid 3px black;
+    }
+
+    main{
+        height: 540px;
+        text-align: center;
+    }
+
+    h2{
+        margin: 30px;
+    }
+
+    nav{
+        display: flex;
+        flex-direction: column;
+        width: 350px;
+        margin: auto;
+    }
+
+    li{
+        margin-top: 30px;
+        list-style-type: none;
+        border-radius: 10px;
+    }
+
+    a{
+        border-radius: 10px;
+        text-decoration: none;
+        padding: 10px;
+        color: white;
+        background-color:burlywood;
+    }    
+
+    footer{
+        background-color: bisque;
+        border-top: solid 3px black;
+        text-align: center;
+        bottom: 0;
+        position: sticky;
+    }
+}
+
+@media(min-width:500px){
+    header{
+    background-color: bisque;
+    text-align: center;
+    height: 70px;
+    padding: 20px;
+    border-bottom: solid 3px black;
+    }
+
+    main{
+        width: 100%;
+        text-align: center;
+        height: 478px;
+    }
+
+    h2{
+        margin-top: 30px;
+    }
+
+    nav{
+        width: 440px;
+        margin: 30px auto;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        border-radius: 10px;
+        border: solid 3px black;
+        background-color: rgb(254, 248, 240);
+    }
+
+    li{
+        margin: 50px auto;
+        list-style-type: none;
+        width: 380px;
+        border-radius: 10px;
+    }
+
+    a{
+        text-decoration: none;
+        font-weight: bold;
+        color: white;
+        background-color: burlywood;
+        width: 380px;
+        border-radius: 10px;
+        padding: 10px;
+    }
+
+    footer{
+        background-color: bisque;
+        text-align: center;
+        bottom: 0;
+        position: sticky;
+        padding: 10px;
+        border-top: solid 3px black;
     }
 }
