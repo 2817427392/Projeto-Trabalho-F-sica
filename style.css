@@ -5,7 +5,13 @@
     top: 0;
 }
 
+html,
 body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
     background-color: antiquewhite;
 }
 
@@ -20,6 +26,7 @@ body {
     main {
         height: 540px;
         text-align: center;
+        flex: 1;
     }
 
     h2 {
@@ -52,6 +59,7 @@ body {
         border-top: solid 3px black;
         text-align: center;
         bottom: 0;
+        padding: 10px;
         position: sticky;
     }
 }
@@ -68,7 +76,7 @@ body {
     main {
         width: 100%;
         text-align: center;
-        height: 478px;
+        flex: 1;
     }
 
     h2 {
