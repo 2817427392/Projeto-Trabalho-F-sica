@@ -1,0 +1,231 @@
+* {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  top: 0;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  background-color: bisque;
+}
+
+@media (max-width: 450px) {
+  header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: blanchedalmond;
+    padding: 10px;
+    border-bottom: solid 2px black;
+  }
+
+  h1 {
+    font-size: 22px;
+    text-align: center;
+  }
+
+  nav {
+    margin-top: 10px;
+  }
+
+  li {
+    list-style-type: none;
+    margin-bottom: 10px;
+  }
+
+  a {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    padding: 8px;
+    background-color: rgb(165, 124, 70);
+    border-radius: 10px;
+    margin: 5px auto;
+    width: 80%;
+  }
+
+  a:hover {
+    background-color: rgb(116, 95, 67);
+  }
+
+  main {
+    flex: 1;
+  }
+
+  .container {
+    margin: 20px auto;
+    background-color: white;
+    border: 2px solid #ccc;
+    padding: 10px;
+    border-radius: 12px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+    width: 80%;
+  }
+
+  h2 {
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+
+  label {
+    font-size: 14px;
+  }
+
+  input {
+    width: 95%;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #aaa;
+  }
+
+  #botao {
+    display: flex;
+    justify-content: center;
+  }
+
+  button {
+    width: 100%;
+    max-width: 300px;
+    padding: 12px;
+    background-color: rgb(165, 124, 70);
+    border: none;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 15px;
+  }
+
+  button:hover {
+    background-color: rgb(116, 95, 67);
+  }
+
+  .resultado {
+    margin-top: 20px;
+    font-size: 16px;
+    text-align: center;
+  }
+
+  footer {
+    background-color: blanchedalmond;
+    text-align: center;
+    padding: 8px;
+    border-top: solid 2px black;
+    font-size: 14px;
+  }
+}
+
+@media(min-width:450px) {
+  header {
+    display: flex;
+    justify-content: space-around;
+    background-color: blanchedalmond;
+    align-items: center;
+    height: 70px;
+    padding: 20px;
+    border-bottom: solid 2px black;
+  }
+
+  h1 {
+    width: 500px;
+  }
+
+  li {
+    list-style-type: none;
+  }
+
+  a {
+    text-decoration: none;
+    color: white;
+    font-size: 17px;
+    padding: 10px;
+    background-color: rgb(165, 124, 70);
+    border-radius: 10px;
+  }
+
+  a:hover {
+    background-color: rgb(116, 95, 67);
+  }
+
+  main {
+    flex: 1;
+  }
+
+  .container {
+    margin: 10px auto;
+    background-color: white;
+    border: 2px solid #ccc;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 400px;
+  }
+
+  h2 {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  #botao {
+    text-align: center;
+  }
+
+  label {
+    margin-top: 5px;
+  }
+
+  input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #aaa;
+  }
+
+  button {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: auto;
+    width: 350px;
+    padding: 15px;
+    margin-top: 20px;
+    background-color: rgb(165, 124, 70);
+    border: none;
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+
+  button:hover {
+    background-color: rgb(116, 95, 67);
+  }
+
+  .resultado {
+    margin-top: 20px;
+    font-weight: bold;
+    text-align: center;
+    font-size: 18px;
+  }
+
+  footer {
+    background-color: blanchedalmond;
+    text-align: center;
+    bottom: 0;
+    position: sticky;
+    padding: 10px;
+    border-top: solid 2px black;
+  }
+}

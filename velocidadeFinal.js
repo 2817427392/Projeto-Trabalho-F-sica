@@ -1,40 +1,34 @@
 function calcularVelocidadeFinal() {
-    const g = parseFloat(document.getElementById("gravidade").value);
-    const anguloGraus = parseFloat(document.getElementById("angulo").value);
-    const v0 = parseFloat(document.getElementById("v0").value);
-    const d = parseFloat(document.getElementById("distancia").value);
+    let g = document.getElementById("gravidade").value;
+    let anguloGraus = document.getElementById("angulo").value;
+    let v0 = document.getElementById("v0").value;
+    let d = document.getElementById("distancia").value;
+    let mensagem = "";
 
-    const rad = anguloGraus * Math.PI / 180;
-    const aceleracao = g * Math.sin(rad);
+    if (g.trim()==="" || anguloGraus.trim()===""|| v0.trim()==="" || d.trim()==="") {
+        mensagem = "Por favor, insira um valor em todos os campos.";
+    }else if(gravidade<=0){
+        mensagem = "A gravidade deve ser um número positivo.";
+    }else if(anguloGraus<0 || anguloGraus>180){
+        mensagem = "O ângulo deve ser um número de zero a 180.";   
+    }else if(v0<0){
+        mensagem = "A velocidade inicial deve ser um número positivo ou zero."; 
+    }else if(d<=0){
+        mensagem = "O tamanho da rampa deve ser um número positivo.";
+    }else{
+        g=parseFloat(g);
+        anguloGraus=parseFloat(anguloGraus);
+        v0=parseFloat(v0);
+        d=parseFloat(d);
+        // Fórmula para calcular a aceleração
+        const rad = anguloGraus * Math.PI / 180;
+        const aceleracao = g * Math.sin(rad);
 
-    // Coeficientes da equação quadrática: (1/2) a t² + v0 t - d = 0
-    const A = 0.5 * aceleracao;
-    const B = v0;
-    const C = -d;
+        // Fórmula para calcular a velocidade final
+        const vFinal2=v0*v0+2*aceleracao*d;
+        const vFinal = Math.sqrt(vFinal2);
 
-    const delta = B * B - 4 * A * C;
-
-    if (delta < 0) {
-        document.getElementById("resultado").textContent = "Não há solução real para o tempo.";
-        return;
+        mensagem=`A velocidade final é ${vFinal.toFixed(3)} m/s.`;
     }
-
-    const t1 = (-B + Math.sqrt(delta)) / (2 * A);
-    const t2 = (-B - Math.sqrt(delta)) / (2 * A);
-
-    // Escolhe o tempo positivo e maior que zero
-    let tempo;
-    if (t1 > 0 && t2 > 0) tempo = Math.min(t1, t2);
-    else if (t1 > 0) tempo = t1;
-    else if (t2 > 0) tempo = t2;
-    else {
-        document.getElementById("resultado").textContent = "Tempo negativo, situação inválida.";
-        return;
-    }
-
-    // Calcula velocidade final: v = v0 + a * t
-    const vFinal = v0 + aceleracao * tempo;
-
-    document.getElementById("resultado").textContent =
-        `A velocidade final é ${vFinal.toFixed(3)} m/s.`;
+    document.getElementById("resultado").textContent=mensagem    ;
 }

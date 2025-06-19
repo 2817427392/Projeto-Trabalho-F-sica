@@ -12,51 +12,63 @@ body {
     flex-direction: column;
     margin: 0;
     padding: 0;
-    background-color: antiquewhite;
+    background-color: bisque;
 }
 
 @media(max-width:450px) {
     header {
-        background-color: bisque;
+        background-color: blanchedalmond;
         text-align: center;
         padding: 10px;
-        border-bottom: solid 3px black;
+        border-bottom: solid 2px black;
     }
 
     main {
-        height: 540px;
         text-align: center;
         flex: 1;
+    }
+
+    nav {
+        width: 90%;
+        margin: 30px auto;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        border-radius: 10px;
+        border: 2px solid #ccc;
+        background-color: white;
     }
 
     h2 {
         margin: 30px;
     }
 
-    nav {
-        display: flex;
-        flex-direction: column;
-        width: 350px;
-        margin: auto;
+    li {
+        margin: 5px auto;
+        list-style-type: none;
+        width: 80%;
+        border-radius: 10px;
+        background-color: rgb(165, 124, 70);
+        padding: 15px;
     }
 
-    li {
-        margin-top: 30px;
-        list-style-type: none;
-        border-radius: 10px;
+    li:hover {
+        background-color: rgb(116, 95, 67);
     }
 
     a {
-        border-radius: 10px;
+        width: 80%;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
         text-decoration: none;
-        padding: 10px;
+        font-weight: medium;
         color: white;
-        background-color: burlywood;
+        padding: 15px;
+        border-radius: 10px;
     }
 
     footer {
-        background-color: bisque;
-        border-top: solid 3px black;
+        background-color: blanchedalmond;
+        border-top: solid 2px black;
         text-align: center;
         bottom: 0;
         padding: 10px;
@@ -66,11 +78,11 @@ body {
 
 @media(min-width:500px) {
     header {
-        background-color: bisque;
+        background-color: blanchedalmond;
         text-align: center;
         height: 70px;
         padding: 20px;
-        border-bottom: solid 3px black;
+        border-bottom: solid 2px black;
     }
 
     main {
@@ -90,33 +102,39 @@ body {
         flex-direction: column;
         gap: 30px;
         border-radius: 10px;
-        border: solid 3px black;
-        background-color: rgb(254, 248, 240);
+        border: 2px solid #ccc;
+        background-color: white;
     }
 
     li {
-        margin: 50px auto;
+        margin: 10px auto;
         list-style-type: none;
-        width: 380px;
+        width: 350px;
         border-radius: 10px;
+        background-color: rgb(165, 124, 70);
+        padding: 15px;
+    }
+
+    li:hover {
+        background-color: rgb(116, 95, 67);
     }
 
     a {
+        width: 350px;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
         text-decoration: none;
-        font-weight: bold;
+        font-weight: medium;
         color: white;
-        background-color: burlywood;
-        width: 380px;
+        padding: 15px;
         border-radius: 10px;
-        padding: 10px;
     }
 
     footer {
-        background-color: bisque;
+        background-color: blanchedalmond;
         text-align: center;
         bottom: 0;
         position: sticky;
         padding: 10px;
-        border-top: solid 3px black;
+        border-top: solid 2px black;
     }
 }
