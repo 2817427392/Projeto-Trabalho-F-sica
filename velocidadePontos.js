@@ -2,7 +2,10 @@ function calcularVelocidadeFinal() {
     const g = parseFloat(document.getElementById("gravidade").value);
     const anguloGraus = parseFloat(document.getElementById("angulo").value);
     const v0 = parseFloat(document.getElementById("v0").value);
-    const d = parseFloat(document.getElementById("distancia").value);
+    const d1 = parseFloat(document.getElementById("distancia1").value);
+    const d2 = parseFloat(document.getElementById("distancia2").value);
+
+    const d=d2-d1
 
     const rad = anguloGraus * Math.PI / 180;
     const aceleracao = g * Math.sin(rad);
@@ -36,5 +39,5 @@ function calcularVelocidadeFinal() {
     const vFinal = v0 + aceleracao * tempo;
 
     document.getElementById("resultado").textContent =
-        `A velocidade final é ${vFinal.toFixed(3)} m/s.`;
+        `A velocidade final é ${vFinal.toFixed(2)} m/s.`;
 }

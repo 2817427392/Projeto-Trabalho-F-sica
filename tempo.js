@@ -27,5 +27,5 @@ function calcularTempo() {
 
   const tempo = Math.max(t1, t2);
 
-  resultadoDiv.textContent = `Tempo: ${tempo.toFixed(2)} segundos`;
+  resultadoDiv.textContent = `Tempo: ${tempo.toFixed(3)} segundos`;
 }
