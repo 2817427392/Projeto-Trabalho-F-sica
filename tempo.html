@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Tempo de Queda em Rampa</title>
   <link rel="stylesheet" href="outro.css">
 </head>
+
 <body>
 
   <header>
@@ -33,7 +35,9 @@
       <label for="distancia">Distância (m):</label>
       <input type="number" id="distancia" value="0" step="0.1">
 
-      <button onclick="calcularTempo()">Calcular Tempo</button>
+      <div id="botao">
+        <button onclick="calcularTempo()">Calcular Tempo</button>
+      </div>
 
       <div class="resultado" id="resultado"></div>
     </div>
@@ -45,4 +49,5 @@
 
   <script src="tempo.js"></script>
 </body>
+
 </html>
