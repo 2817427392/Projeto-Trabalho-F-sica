@@ -9,7 +9,12 @@
 <body>
 
   <header>
-    <h1>Tempo de Descida em Rampa</h1>
+    <h1>Tempo de Descida de uma rampa</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Voltar para página inicial</a></li>
+      </ul>
+    </nav>
   </header>
 
   <main>
@@ -20,13 +25,13 @@
       <input type="number" id="gravidade" value="9.8" step="0.1">
 
       <label for="angulo">Ângulo da rampa (graus):</label>
-      <input type="number" id="angulo" value="30">
+      <input type="number" id="angulo" value="0">
 
       <label for="v0">Velocidade inicial (m/s):</label>
       <input type="number" id="v0" value="0">
 
       <label for="distancia">Distância (m):</label>
-      <input type="number" id="distancia" value="0.9" step="0.01">
+      <input type="number" id="distancia" value="0" step="0.1">
 
       <button onclick="calcularTempo()">Calcular Tempo</button>
 

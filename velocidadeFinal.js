@@ -30,5 +30,5 @@ function calcularVelocidadeFinal() {
 
         mensagem=`A velocidade final é ${vFinal.toFixed(3)} m/s.`;
     }
-    document.getElementById("resultado").textContent=mensagem    ;
+    document.getElementById("resultado").textContent=mensagem;
 }
