@@ -117,14 +117,14 @@ body {
     font-size: 16px;
     text-align: center;
   }
-
   footer {
-    background-color: blanchedalmond;
-    text-align: center;
-    padding: 8px;
-    border-top: solid 2px black;
-    font-size: 14px;
-  }
+        background-color: blanchedalmond;
+        border-top: solid 2px black;
+        text-align: center;
+        bottom: 0;
+        padding: 10px;
+        position: sticky;
+    }
 }
 
 @media(min-width:450px) {
